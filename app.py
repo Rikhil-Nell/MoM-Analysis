@@ -123,6 +123,9 @@ async def get_bot_response(user_input: str):
 
 ### 💰 **Cost & Impact Analysis**
 {response.output.cost}
+
+### 💬 **Chat Response**
+{response.output.conversation}
             """
             
             messages.append(ModelResponse(parts=[TextPart(content=formatted_response)]))
