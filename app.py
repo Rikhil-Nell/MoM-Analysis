@@ -30,6 +30,24 @@ with st.sidebar:
     
     if st.button("🍕 Product Analysis", use_container_width=True):
         st.session_state.auto_query = "Show me product_analysis structure and recent performance data"
+
+    if st.button("Generate Miss You", use_container_width=True):
+
+        with open("prompts/miss_you.txt", "r", encoding="utf-8") as f:
+            
+            st.session_state.auto_query = f.read()
+
+    if st.button("Generate Stamp Card", use_container_width=True):
+
+        with open("prompts/stamp_card.txt", "r", encoding="utf-8") as f:
+            
+            st.session_state.auto_query = f.read()
+    
+    if st.button("Generate Creative", use_container_width=True):
+
+        with open("prompts/creative.txt", "r", encoding="utf-8") as f:
+            
+            st.session_state.auto_query = f.read()
     
     st.divider()
     
@@ -195,10 +213,10 @@ if user_input:
     messages.append(ModelResponse(parts=[TextPart(content=bot_response)]))
 
 # Footer
-st.divider()
-st.markdown(body="""
-<small>
-🚀 Clink - Powered by advanced AI to help Indian restaurants thrive in the competitive food delivery market.\n  
-💡 *Tip: Be specific about what KPI data you want to analyze for better coupon recommendations.*
-</small>
-""", unsafe_allow_html=True)
+# st.divider()
+# st.markdown(body="""
+# <small>
+# 🚀 Clink - Powered by advanced AI to help Indian restaurants thrive in the competitive food delivery market.\n  
+# 💡 *Tip: Be specific about what KPI data you want to analyze for better coupon recommendations.*
+# </small>
+# """, unsafe_allow_html=True)

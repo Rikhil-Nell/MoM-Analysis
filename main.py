@@ -5,15 +5,25 @@ from pydantic_ai.messages import ModelMessage, UserPromptPart, TextPart, ModelRe
 from tools import *
 from settings import Settings
 from pydantic import BaseModel, Field
+from openai import AsyncOpenAI
+import logfire
 
 settings = Settings()
+
+logfire.configure(token=settings.logfire_key)
+
 model_name: OpenAIModelName = "gpt-4.1"
-model = OpenAIModel(model_name=model_name, provider=OpenAIProvider(api_key=settings.openai_api_key))
+
+openai_client = AsyncOpenAI(api_key=settings.openai_api_key)
+
+logfire.instrument_openai(openai_client=openai_client)
+
+model = OpenAIModel(model_name=model_name, provider=OpenAIProvider(openai_client=openai_client))
+
 model_settings = OpenAIModelSettings(
     temperature=0.1,
     top_p=0.95
 )
-
 
 class Response(BaseModel):
     coupons: str = Field(description="Best Coupons to bring more footfall to the stores")
@@ -21,13 +31,13 @@ class Response(BaseModel):
     cost: str = Field(description="How many orders/sales would increase. How much discount they are going to spend")
     conversation : str = Field(description="Use this field to respond normally if none other fields fit for the answer")
 
-with open("prompts/prompt.txt", "r", encoding="utf-8") as f:
-    prompt = f.read()
+# with open("prompts/prompt.txt", "r", encoding="utf-8") as f:
+#     prompt = f.read()
 
 agent = Agent(
     model=model,
     model_settings=model_settings,
-    system_prompt=prompt,
+    # system_prompt=prompt,
     output_type=Response,
     tools=[
         explore_kpi_structure,
@@ -37,6 +47,8 @@ agent = Agent(
         analyze_time_series_kpi
     ]
 )
+
+logfire.instrument_pydantic_ai(agent)
 
 messages: list[ModelMessage] = []
 

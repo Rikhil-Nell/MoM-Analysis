@@ -3,6 +3,7 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     openai_api_key : str = Field(..., validation_alias="OPENAI_API_KEY")
+    logfire_key : str = Field(..., validation_alias="LOGFIRE_KEY")
 
     class Config:
         env_file = ".env"
