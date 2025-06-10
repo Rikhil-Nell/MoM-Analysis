@@ -1,0 +1,104 @@
+# Triple Battle-Tested Coupon Strategy Generator
+
+**Context**: Generate three proven coupon strategies for our restaurant partner: Stamp Card, Miss You, and Joining Bonus coupons. Analyze the restaurant's KPI data to create optimized versions of these battle-tested strategies with comprehensive cost-benefit analysis.
+
+## Your Mission
+Create data-driven versions of our three most successful coupon types, each tailored to this restaurant's specific customer behavior patterns, with detailed financial projections and combined impact analysis.
+
+## Required KPI Data Analysis
+
+### 1. Customer Lifecycle Analysis
+- **New Customer Patterns**: Analyze first-time visitor behavior, conversion rates, and initial order values
+- **Customer Retention**: Study visit frequency distributions, dormancy patterns, and churn timelines
+- **Loyalty Progression**: Track how visit frequency correlates with customer lifetime value
+- **Seasonal Variations**: Identify temporal patterns affecting all three strategies
+
+### 2. Financial Baseline Metrics
+- **Average Order Value (AOV)** across different customer segments and time periods
+- **Customer Acquisition Cost (CAC)** and current new customer acquisition rates
+- **Customer Lifetime Value (CLV)** for different frequency segments
+- **Profit Margins** per order and per customer segment
+- **Current promotional spend** and effectiveness
+
+### 3. Competitive & Market Context
+- **Platform Dependency**: Current reliance on Swiggy/Zomato and associated costs
+- **Market Saturation**: Local competition and customer acquisition difficulty
+- **Pricing Sensitivity**: Historical response to discounts and promotional offers
+
+## Three Coupon Strategies Required
+
+### 1. STAMP CARD COUPON
+**Purpose**: Increase visit frequency among existing customers
+**Analysis Focus**: 
+- Current visit frequency patterns by customer segment
+- Optimal stamp requirement (5, 7, 10 visits) based on natural behavior
+- Appropriate timeframe (30, 45, 60 days) for completion
+- Most compelling reward based on popular items and profit margins
+
+### 2. MISS YOU COUPON  
+**Purpose**: Reactivate dormant customers and reduce churn
+**Analysis Focus**:
+- Customer dormancy patterns (when do customers typically stop visiting?)
+- Optimal trigger timing (15, 30, 45 days since last visit)
+- Segmented approach for different customer value tiers
+- Most effective win-back incentive based on past preferences
+
+### 3. JOINING BONUS COUPON
+**Purpose**: Acquire new customers and improve first-time visitor conversion
+**Analysis Focus**:
+- Current new customer acquisition rates and conversion patterns
+- Competitive landscape for new customer offers
+- Optimal incentive level to drive trial without attracting deal-hunters
+- Balance between attractiveness and profitability
+
+## Cost Analysis Requirements
+
+For each coupon, calculate:
+- **Redemption Rate Projections** (based on historical data and industry benchmarks)
+- **Incremental Sales Impact** (additional orders generated beyond baseline)
+- **Discount Investment** (total promotional spend required)
+- **Revenue Uplift** (gross revenue increase from additional visits)
+- **Net Profit Impact** (revenue increase minus discount costs and operational costs)
+- **Break-even Analysis** (minimum performance required for profitability)
+- **ROI Timeline** (when the investment pays back)
+
+## Detailed Analysis Framework
+
+### For Each Coupon Design:
+1. **Specific Terms**: Exact discount amount, conditions, validity, restrictions
+2. **Target Audience**: Which customer segments will receive this coupon
+3. **Timing Strategy**: When and how frequently to deploy
+4. **Success Metrics**: KPIs to track effectiveness
+
+### For Each Cost Analysis:
+1. **Investment Required**: Total promotional budget needed
+2. **Expected Redemption**: Projected usage rates based on data
+3. **Incremental Revenue**: Additional sales beyond natural baseline
+4. **Net Profit Impact**: Bottom-line effect after all costs
+5. **Risk Factors**: Potential downsides and mitigation strategies
+
+### For Combined Analysis:
+1. **Portfolio Effect**: How the three coupons work together synergistically
+2. **Customer Journey Impact**: Movement through acquisition → retention → loyalty
+3. **Total Investment vs Return**: Overall ROI of the complete strategy
+4. **Implementation Priority**: Which coupon to launch first and why
+5. **Success Benchmarks**: What constitutes success for the combined approach
+
+## Critical Success Factors
+
+- **Data Grounding**: Every recommendation must be backed by specific KPI insights
+- **Financial Viability**: All projections must be realistic and achievable
+- **Implementation Clarity**: Restaurant owner should understand exactly what to do
+- **Measurable Outcomes**: Clear metrics for tracking success
+- **Competitive Advantage**: Strategies should differentiate from platform offers
+
+## Expected Outcomes
+
+Your analysis should demonstrate:
+- **20-30% increase in new customer acquisition** (Joining Bonus)
+- **15-25% reactivation of dormant customers** (Miss You)  
+- **40-60% improvement in visit frequency** among loyalty program participants (Stamp Card)
+- **Overall positive ROI within 90 days** for the combined strategy
+- **Reduced platform dependency** and improved direct customer relationships
+
+Focus on creating a cohesive strategy where these three battle-tested coupons work together to build a complete customer lifecycle optimization system.
