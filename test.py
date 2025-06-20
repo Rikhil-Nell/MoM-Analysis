@@ -28,7 +28,7 @@ from pydantic_ai.messages import (
 )
 from pydantic import BaseModel
 # Assuming these tools exist in a 'tools.py' file
-from tools import analyze_time_series_kpi, explore_kpi_structure, load_kpi_file, list_kpi_files_by_category, search_kpi_files
+from tools import explore_kpi_structure, load_kpi_file
 # Assuming a 'settings.py' file with an OpenAI API key
 from settings import Settings
 
@@ -41,7 +41,7 @@ class ChatStats(BaseModel):
 # --- Agent Setup ---
 settings = Settings()
 # FIX: Using a valid, modern model name to avoid API errors.
-chat_model_name: OpenAIModelName = "gpt-4.1" 
+chat_model_name: OpenAIModelName = "gpt-4o" 
 chat_model = OpenAIModel(
     model_name=chat_model_name,
     provider=OpenAIProvider(api_key=settings.openai_api_key)
@@ -64,10 +64,7 @@ agent = Agent(
     system_prompt=prompt,
     tools=[
         explore_kpi_structure,
-        list_kpi_files_by_category,
         load_kpi_file,
-        search_kpi_files,
-        analyze_time_series_kpi
     ],
     deps_type=Deps
 )
